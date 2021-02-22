@@ -1,5 +1,8 @@
-// Import Base
-@import "normalize";
+// Import ResetCss
+@import 'reset';
+
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 // Font sizes base
 :root {
@@ -8,6 +11,22 @@
   --line-height-base: 1.5;
 }
 
-body{
-  background: #000;
+// Box Sizing
+*::after,
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-html);
+  line-height: var(--line-height-base);
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--font-size-base);
+  color: #333333;
 }
