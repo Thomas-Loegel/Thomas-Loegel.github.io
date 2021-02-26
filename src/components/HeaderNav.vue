@@ -117,25 +117,28 @@ export default {
   // Nav-menu
   .nav-menu {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: -50px;
     transition: all .1s ease;
 
     &.active {
-      left: 10px;
+      left: 15px;
+      //left: 25px;
       transition: all .1s ease;
     }
 
     .nav-list {
 
       .nav-item {
-        margin-bottom: 8px;
+        margin-bottom: 20px;
+        // writing-mode: vertical-rl;
+        // transform: rotate(180deg);
 
         .nav-link {
           text-decoration: none;
           color: inherit;
           padding-bottom: 2px;
-          animation : .2s out;
+          animation : out .1s ease;
 
           @keyframes out {
             from {
@@ -157,7 +160,7 @@ export default {
             background-position: bottom;
             background-repeat: no-repeat;
             background-size: 100% 2px;
-            animation : .2s in;
+            animation : in .1s ease;
 
             @keyframes in {
               from {
