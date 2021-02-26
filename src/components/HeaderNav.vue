@@ -6,12 +6,12 @@
       <div class="bar bar-3"></div>
     </div>
 
-    <!-- <nav>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
+    <nav class="nav-menu" id="nav-menu">
+      <ul class="nav-list">
+        <li class="nav-item"><router-link class="nav-link" to="/">Home</router-link></li>
+        <li class="nav-item"><router-link class="nav-link" to="/about">About</router-link></li>
       </ul>
-    </nav> -->
+    </nav>
   </header>
 </template>
 
@@ -22,13 +22,16 @@ export default {
   }),
   mounted () {
     const burger = document.querySelectorAll('#burger')
+    const nav = document.querySelector('#nav-menu')
 
     for (var i = 0; i < burger.length; i++) {
       burger[i].addEventListener('click', function () {
         if (this.classList.contains('active')) {
           this.classList.remove('active')
+          nav.classList.remove('active')
         } else {
           this.classList.add('active')
+          nav.classList.add('active')
         }
       })
     }
@@ -37,16 +40,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .header {
   display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
 
-  // Burger menu
+  // Burger
   .burger {
     position: relative;
     width: 50px;
     height: 45px;
+    margin: 1rem;
     cursor: pointer;
 
     .bar {
@@ -108,5 +113,67 @@ export default {
       }
     }
   }
+
+  // Nav-menu
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: -50px;
+    transition: all .1s ease;
+
+    &.active {
+      left: 10px;
+      transition: all .1s ease;
+    }
+
+    .nav-list {
+
+      .nav-item {
+        margin-bottom: 8px;
+
+        .nav-link {
+          text-decoration: none;
+          color: inherit;
+          padding-bottom: 2px;
+          animation : .2s out;
+
+          @keyframes out {
+            from {
+              background-image: linear-gradient(#333, #333);
+              background-repeat: no-repeat;
+              background-position: right bottom;
+              background-size: 100% 2px;
+            }
+            to {
+              background-image: linear-gradient(#333, #333);
+              background-repeat: no-repeat;
+              background-position: right bottom;
+              background-size: 0% 2px;
+            }
+          }
+
+          &:hover {
+            background-image: linear-gradient(#333, #333);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 100% 2px;
+            animation : .2s in;
+
+            @keyframes in {
+              from {
+                background-position: left bottom;
+                background-size: 0% 2px;
+              }
+              to {
+                background-position: left bottom;
+                background-size: 100% 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 </style>

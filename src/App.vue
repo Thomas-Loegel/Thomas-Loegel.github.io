@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <HeaderNav/>
-
     <router-view/>
   </div>
 </template>
@@ -18,5 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import 'assets/styles/style.scss';
+
+@import 'assets/styles/style.scss';
+
 </style>
