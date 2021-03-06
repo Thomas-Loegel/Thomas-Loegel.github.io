@@ -147,37 +147,37 @@ export default {
           text-decoration: none;
           color: inherit;
           padding-bottom: 0.2rem;
-          //animation: out .2s ease;
+          animation: out .2s ease;
 
           @keyframes out {
             from {
               background-image: linear-gradient(var(--orange), var(--orange));
               background-repeat: no-repeat;
-              background-position: top bottom;
+              background-position: bottom left;
               background-size: 0.5rem 100%;
             }
             to {
               background-image: linear-gradient(var(--orange),var(--orange));
               background-repeat: no-repeat;
-              background-position: top bottom;
+              background-position: bottom left;
               background-size: 0.5rem 0%;
             }
           }
 
           &:hover {
             background-image: linear-gradient(var(--orange), var(--orange));
-            background-position: tobottomp;
+            background-position: bottom left;
             background-repeat: no-repeat;
             background-size: 0.5rem 100%;
-            //animation: in .2s ease;
+            animation: in .2s ease;
 
             @keyframes in {
               from {
-                background-position: top bottom;
+                background-position: top left;
                 background-size: 0.5rem 0%;
               }
               to {
-                background-position: top bottom;
+                background-position: top left;
                 background-size: 0.5rem 100%;
               }
             }
