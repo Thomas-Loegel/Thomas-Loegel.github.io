@@ -47,6 +47,10 @@ export default {
 .header {
   display: grid;
   padding: 1rem;
+  background-image: linear-gradient(var(--white), var(--white));
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100% 0.2rem;
 
   // Burger
   .burger {
@@ -128,53 +132,53 @@ export default {
     transition: all .2s ease;
 
     &.active {
-      left: 15px;
-      //left: 25px;
+      //left: 15px;
+      left: 25px;
       transition: all .2s ease;
     }
 
     .nav-list {
       .nav-item {
         margin-bottom: 20px;
-        // writing-mode: vertical-rl;
-        // transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
 
         .nav-link {
           text-decoration: none;
           color: inherit;
           padding-bottom: 0.2rem;
-          animation: out .2s ease;
+          //animation: out .2s ease;
 
           @keyframes out {
             from {
               background-image: linear-gradient(var(--orange), var(--orange));
               background-repeat: no-repeat;
-              background-position: right bottom;
-              background-size: 100% 0.2rem;
+              background-position: top bottom;
+              background-size: 0.5rem 100%;
             }
             to {
               background-image: linear-gradient(var(--orange),var(--orange));
               background-repeat: no-repeat;
-              background-position: right bottom;
-              background-size: 0% 0.2rem;
+              background-position: top bottom;
+              background-size: 0.5rem 0%;
             }
           }
 
           &:hover {
             background-image: linear-gradient(var(--orange), var(--orange));
-            background-position: bottom;
+            background-position: tobottomp;
             background-repeat: no-repeat;
-            background-size: 100% 0.2rem;
-            animation: in .2s ease;
+            background-size: 0.5rem 100%;
+            //animation: in .2s ease;
 
             @keyframes in {
               from {
-                background-position: left bottom;
-                background-size: 0% 0.2rem;
+                background-position: top bottom;
+                background-size: 0.5rem 0%;
               }
               to {
-                background-position: left bottom;
-                background-size: 100% 0.2rem;
+                background-position: top bottom;
+                background-size: 0.5rem 100%;
               }
             }
           }

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <HeaderNav/>
-    <router-view/>
+    <main class="main">
+      <router-view/>
+    </main>
     <FooterNav/>
   </div>
 </template>
@@ -23,6 +25,23 @@ export default {
 @import 'assets/styles/style.scss';
 
 #app {
-  height: 100vh;
+
+  .main {
+    padding: 1rem 0 0 8rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 4.4rem;
+      left: 7rem;
+      background-image:
+      linear-gradient(var(--white), var(--white));
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 0.1rem 100%;
+    }
+  }
 }
 </style>

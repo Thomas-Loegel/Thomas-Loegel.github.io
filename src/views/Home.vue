@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div class="home">
     <h1>{{ pageTitle }}</h1>
 
     <CardProject
@@ -8,7 +8,7 @@
       content="ceci est mon content"
       img="logo.png" alt="Mon logo"
     />
-  </main>
+  </div>
 </template>
 
 <script>

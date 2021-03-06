@@ -1,5 +1,7 @@
 <template>
   <footer class="footer">
+    <span class="copy">© Loegel {{new Date().getFullYear()}}.</span>
+
     <div class="social">
       <a class="social-link" href="https://github.com/Thomas-Loegel" target="_blank" rel="noopener noreferrer">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="github-svg" role="img" width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
@@ -14,7 +16,6 @@
       </a>
     </div><!-- .social -->
 
-    <span class="copy">© Loegel {{new Date().getFullYear()}}.</span>
   </footer>
 </template>
 
@@ -44,7 +45,7 @@ export default {
   background-size: 100% 0.1rem;
 
   .social {
-    justify-self: start;
+    justify-self: end;
 
     .social-link {
       display: inline-block;
@@ -62,7 +63,7 @@ export default {
   }
 
   .copy {
-    justify-self: end;
+    justify-self: start;
     cursor: default;
   }
 }
