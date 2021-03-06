@@ -8,8 +8,12 @@
 
     <nav class="nav-menu" id="nav-menu">
       <ul class="nav-list">
-        <li class="nav-item"><router-link class="nav-link" to="/">Home</router-link></li>
-        <li class="nav-item"><router-link class="nav-link" to="/about">About</router-link></li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/about">About</router-link>
+        </li>
       </ul>
     </nav>
   </header>
@@ -40,27 +44,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  padding: 1rem;
 
   // Burger
   .burger {
     position: relative;
     width: 50px;
     height: 45px;
-    margin: 1rem;
     cursor: pointer;
+
+    &:hover {
+      .bar-2 {
+        color: var(--orange);
+      }
+    }
 
     .bar {
       position: absolute;
       left: 0;
       width: 100%;
       height: 20%;
-      background:#333;
-      transition: all .3s ease;
+      background: var(--white);
+      transition: all 0.2s ease;
     }
 
     .bar-1 {
@@ -73,7 +80,7 @@ export default {
       top: 40%;
       transform: scale(1, 1);
       transform-origin: 0% 50%;
-      transition: all .3s .3s ease;
+      transition: all .1s .1s ease;
       background: none;
       font-size: 1.1rem;
       text-align: center;
@@ -89,9 +96,8 @@ export default {
     }
 
     &.active {
-
       .bar {
-        background:#333;
+        background: var(--orange);
       }
 
       .bar-1 {
@@ -119,16 +125,15 @@ export default {
     position: absolute;
     top: 80px;
     left: -50px;
-    transition: all .1s ease;
+    transition: all .2s ease;
 
     &.active {
       left: 15px;
       //left: 25px;
-      transition: all .1s ease;
+      transition: all .2s ease;
     }
 
     .nav-list {
-
       .nav-item {
         margin-bottom: 20px;
         // writing-mode: vertical-rl;
@@ -137,39 +142,39 @@ export default {
         .nav-link {
           text-decoration: none;
           color: inherit;
-          padding-bottom: 2px;
-          animation : out .1s ease;
+          padding-bottom: 0.2rem;
+          animation: out .2s ease;
 
           @keyframes out {
             from {
-              background-image: linear-gradient(#333, #333);
+              background-image: linear-gradient(var(--orange), var(--orange));
               background-repeat: no-repeat;
               background-position: right bottom;
-              background-size: 100% 2px;
+              background-size: 100% 0.2rem;
             }
             to {
-              background-image: linear-gradient(#333, #333);
+              background-image: linear-gradient(var(--orange),var(--orange));
               background-repeat: no-repeat;
               background-position: right bottom;
-              background-size: 0% 2px;
+              background-size: 0% 0.2rem;
             }
           }
 
           &:hover {
-            background-image: linear-gradient(#333, #333);
+            background-image: linear-gradient(var(--orange), var(--orange));
             background-position: bottom;
             background-repeat: no-repeat;
-            background-size: 100% 2px;
-            animation : in .1s ease;
+            background-size: 100% 0.2rem;
+            animation: in .2s ease;
 
             @keyframes in {
               from {
                 background-position: left bottom;
-                background-size: 0% 2px;
+                background-size: 0% 0.2rem;
               }
               to {
                 background-position: left bottom;
-                background-size: 100% 2px;
+                background-size: 100% 0.2rem;
               }
             }
           }
@@ -178,5 +183,4 @@ export default {
     }
   }
 }
-
 </style>
