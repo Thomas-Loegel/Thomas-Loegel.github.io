@@ -1,19 +1,30 @@
 <template>
   <main>
-    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate sequi harum commodi fugiat voluptas eius facilis sit quis! Voluptatem tempora libero ducimus deserunt quas atque repudiandae. Sequi, assumenda. Itaque?</p> -->
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <h1>{{ pageTitle }}</h1>
+
+    <CardProject
+      className="hey"
+      title="Welcome to Your Vue.js App"
+      content="ceci est mon content"
+      img="logo.png" alt="Mon logo"
+    />
   </main>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+import CardProject from '@/components/CardProject.vue'
 
 export default {
   name: 'Home',
   components: {
-    // HelloWorld
+    CardProject
+  },
+  props: {
+    pageTitle: {
+      type: String,
+      default: 'Home Page'
+    }
   }
 }
 </script>
