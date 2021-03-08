@@ -42,7 +42,7 @@ export default {
   background-image: linear-gradient(var(--white), var(--white));
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100% 0.1rem;
+  background-size: 100% .1rem;
 
   .social {
     justify-self: end;

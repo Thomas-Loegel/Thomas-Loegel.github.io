@@ -40,7 +40,7 @@ export default {
       linear-gradient(var(--white), var(--white));
       background-repeat: no-repeat;
       background-position: left;
-      background-size: 0.1rem 100%;
+      background-size: .05rem 100%;
     }
   }
 }

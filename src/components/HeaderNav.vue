@@ -6,6 +6,10 @@
       <div class="bar bar-3"></div>
     </div>
 
+    <h1 class="main-title">
+      Thomas Loegel
+    </h1>
+
     <nav class="nav-menu" id="nav-menu">
       <ul class="nav-list">
         <li class="nav-item">
@@ -46,11 +50,13 @@ export default {
 <style lang="scss" scoped>
 .header {
   display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
   padding: 1rem;
   background-image: linear-gradient(var(--white), var(--white));
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 100% 0.2rem;
+  background-size: 100% .05rem;
 
   // Burger
   .burger {
@@ -60,6 +66,7 @@ export default {
     cursor: pointer;
 
     &:hover {
+
       .bar-2 {
         color: var(--orange);
       }
@@ -69,7 +76,7 @@ export default {
       position: absolute;
       left: 0;
       width: 100%;
-      height: 20%;
+      height: 15%;
       background: var(--white);
       transition: all 0.2s ease;
     }
@@ -81,12 +88,12 @@ export default {
     }
 
     .bar-2 {
-      top: 40%;
+      bottom: 45%;
       transform: scale(1, 1);
-      transform-origin: 0% 50%;
+      transform-origin: 0% 45%;
       transition: all .1s .1s ease;
       background: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
       text-align: center;
       letter-spacing: 0.4rem;
       font-weight: 400;
@@ -94,7 +101,7 @@ export default {
     }
 
     .bar-3 {
-      top: 80%;
+      bottom: 0;
       transform: rotate(0deg);
       transform-origin: 0% 0%;
     }
@@ -105,7 +112,7 @@ export default {
       }
 
       .bar-1 {
-        width: 95%;
+        width: 100%;
         left: 10%;
         transform: rotate(45deg);
       }
@@ -117,11 +124,16 @@ export default {
       }
 
       .bar-3 {
-        width: 95%;
+        width: 100%;
         left: 10%;
         transform: rotate(-45deg);
       }
     }
+  }
+
+  // Main title
+  .main-title {
+    place-self: center;
   }
 
   // Nav-menu
@@ -129,6 +141,7 @@ export default {
     position: absolute;
     top: 80px;
     left: -50px;
+    width: 2.2rem;
     transition: all .2s ease;
 
     &.active {
@@ -139,7 +152,7 @@ export default {
 
     .nav-list {
       .nav-item {
-        margin-bottom: 20px;
+        margin-top: 2rem;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
 
