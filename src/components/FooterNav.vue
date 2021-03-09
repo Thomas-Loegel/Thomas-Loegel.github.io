@@ -38,11 +38,12 @@ export default {
   grid-template-columns: repeat(2, 1fr );
   align-items: center;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1.5rem;
   background-image: linear-gradient(var(--white), var(--white));
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% .1rem;
+  background-color: var(--black);
 
   .social {
     justify-self: end;

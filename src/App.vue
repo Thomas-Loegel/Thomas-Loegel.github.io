@@ -25,23 +25,13 @@ export default {
 @import 'assets/styles/style.scss';
 
 #app {
+  position: relative;
+  height: 100vh;
 
   .main {
-    padding: 1rem 0 0 8rem;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 4.4rem;
-      left: 7rem;
-      background-image:
-      linear-gradient(var(--white), var(--white));
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: .05rem 100%;
-    }
+    margin-left: 7rem;
+    margin-bottom: 5.5rem;
+    padding: 0 5rem;
   }
 }
 </style>

@@ -15,6 +15,36 @@
       content="Contenu de card project"
       img="logo.png" alt="Mon logo"
     />
+    <CardProject
+      className="ho"
+      title="Bye Bye"
+      content="Contenu de card project"
+      img="logo.png" alt="Mon logo"
+    />
+    <CardProject
+      className="ho"
+      title="Bye Bye"
+      content="Contenu de card project"
+      img="logo.png" alt="Mon logo"
+    />
+    <CardProject
+      className="ho"
+      title="Bye Bye"
+      content="Contenu de card project"
+      img="logo.png" alt="Mon logo"
+    />
+    <CardProject
+      className="ho"
+      title="Bye Bye"
+      content="Contenu de card project"
+      img="logo.png" alt="Mon logo"
+    />
+    <CardProject
+      className="ho"
+      title="Bye Bye"
+      content="Contenu de card project"
+      img="logo.png" alt="Mon logo"
+    />
   </div>
 </template>
 

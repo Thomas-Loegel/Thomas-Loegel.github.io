@@ -6,9 +6,9 @@
       <div class="bar bar-3"></div>
     </div>
 
-    <h1 class="main-title">
+    <!-- <h1 class="main-title">
       Thomas Loegel
-    </h1>
+    </h1> -->
 
     <nav class="nav-menu" id="nav-menu">
       <ul class="nav-list">
@@ -49,20 +49,23 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 2rem;
-  padding: 1rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black);
   background-image: linear-gradient(var(--white), var(--white));
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 100% .05rem;
+  background-position: right;
+  background-size: .06rem 100%;
 
   // Burger
   .burger {
     position: relative;
     width: 50px;
     height: 45px;
+    margin: 1rem;
+
     cursor: pointer;
 
     &:hover {
@@ -145,7 +148,6 @@ export default {
     transition: all .2s ease;
 
     &.active {
-      //left: 15px;
       left: 25px;
       transition: all .2s ease;
     }
@@ -167,13 +169,13 @@ export default {
               background-image: linear-gradient(var(--orange), var(--orange));
               background-repeat: no-repeat;
               background-position: bottom left;
-              background-size: 0.5rem 100%;
+              background-size: 0.6rem 100%;
             }
             to {
               background-image: linear-gradient(var(--orange),var(--orange));
               background-repeat: no-repeat;
               background-position: bottom left;
-              background-size: 0.5rem 0%;
+              background-size: 0.6rem 0%;
             }
           }
 
@@ -181,17 +183,17 @@ export default {
             background-image: linear-gradient(var(--orange), var(--orange));
             background-position: bottom left;
             background-repeat: no-repeat;
-            background-size: 0.5rem 100%;
+            background-size: 0.6rem 100%;
             animation: in .2s ease;
 
             @keyframes in {
               from {
                 background-position: top left;
-                background-size: 0.5rem 0%;
+                background-size: 0.6rem 0%;
               }
               to {
                 background-position: top left;
-                background-size: 0.5rem 100%;
+                background-size: 0.6rem 100%;
               }
             }
           }
