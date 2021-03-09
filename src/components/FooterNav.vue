@@ -15,7 +15,6 @@
         </svg>
       </a>
     </div><!-- .social -->
-
   </footer>
 </template>
 

@@ -31,7 +31,7 @@ export default {
   .main {
     margin-left: 7rem;
     margin-bottom: 5.5rem;
-    padding: 0 5rem;
+    padding: 2.2rem 1rem 0 1rem;
   }
 }
 </style>

@@ -1,5 +1,26 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h2 class="h2">{{ pageTitle }}</h2>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'About',
+  components: {
+
+  },
+  props: {
+    pageTitle: {
+      type: String,
+      default: 'About'
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+.about {
+
+}
+</style>
