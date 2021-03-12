@@ -9,10 +9,10 @@
     <nav class="nav-menu" id="nav-menu">
       <ul class="nav-list">
         <li class="nav-item">
-          <router-link class="nav-link" to="/">Home</router-link>
+          <router-link class="nav-link" to="/">Accueil</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/about">About</router-link>
+          <router-link class="nav-link" to="/about">Projets</router-link>
         </li>
       </ul>
     </nav>
