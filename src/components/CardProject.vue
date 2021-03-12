@@ -1,6 +1,6 @@
 <template>
   <article :class="className">
-    <h2>{{ title }}</h2>
+    <h3>{{ title }}</h3>
     <p>{{ content }}</p>
     <img :src="require(`../../public/medias/projects/${img}`)" :alt="alt">
   </article>

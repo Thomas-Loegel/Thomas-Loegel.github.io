@@ -6,10 +6,6 @@
       <div class="bar bar-3"></div>
     </div>
 
-    <!-- <h1 class="main-title">
-      Thomas Loegel
-    </h1> -->
-
     <nav class="nav-menu" id="nav-menu">
       <ul class="nav-list">
         <li class="nav-item">
@@ -65,7 +61,6 @@ export default {
     width: 50px;
     height: 45px;
     margin: 1rem;
-
     cursor: pointer;
 
     &:hover {
@@ -132,11 +127,6 @@ export default {
         transform: rotate(-45deg);
       }
     }
-  }
-
-  // Main title
-  .main-title {
-    place-self: center;
   }
 
   // Nav-menu

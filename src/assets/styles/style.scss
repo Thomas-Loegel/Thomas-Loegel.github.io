@@ -34,6 +34,18 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: var(--font-size-base);
+<<<<<<< HEAD
   color: var(--font-base);
   background-color: var(--background-base);
+=======
+  color: var(--white);
+  background-color: var(--black);
+}
+
+// H(n)
+.h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+>>>>>>> 16543dcd5737beab7cccdc5999924f5cb27f1a5a
 }
