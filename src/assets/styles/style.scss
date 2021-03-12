@@ -10,9 +10,9 @@
   --font-size-html: 62.5%;
   --font-size-base: 1.6rem;
   --line-height-base: 1.5;
-  --orange: #b66449;
-  --white: #E2DCC8;
-  --black: #252525;
+  --hover: #b66449;
+  --font-base: #d4dcff;
+  --background-base: #171933;
 }
 
 // Box Sizing
@@ -34,6 +34,6 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: var(--font-size-base);
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--font-base);
+  background-color: var(--background-base);
 }

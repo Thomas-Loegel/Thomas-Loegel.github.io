@@ -39,11 +39,11 @@ export default {
   align-items: center;
   justify-content: space-around;
   padding: 1.5rem;
-  background-image: linear-gradient(var(--white), var(--white));
+  background-image: linear-gradient(var(--font-base), var(--font-base));
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% .1rem;
-  background-color: var(--black);
+  background-color: var(--background-base);
 
   .social {
     justify-self: end;
@@ -58,7 +58,7 @@ export default {
       }
 
       &:hover {
-        color: var(--orange);
+        color: var(--hover);
       }
     }
   }

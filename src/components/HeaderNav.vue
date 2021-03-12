@@ -53,8 +53,8 @@ export default {
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--black);
-  background-image: linear-gradient(var(--white), var(--white));
+  background-color: var(--background-base);
+  background-image: linear-gradient(var(--font-base), var(--font-base));
   background-repeat: no-repeat;
   background-position: right;
   background-size: .06rem 100%;
@@ -71,7 +71,7 @@ export default {
     &:hover {
 
       .bar-2 {
-        color: var(--orange);
+        color: var(--hover);
       }
     }
 
@@ -80,7 +80,7 @@ export default {
       left: 0;
       width: 100%;
       height: 15%;
-      background: var(--white);
+      background: var(--font-base);
       transition: all 0.2s ease;
     }
 
@@ -111,7 +111,7 @@ export default {
 
     &.active {
       .bar {
-        background: var(--orange);
+        background: var(--hover);
       }
 
       .bar-1 {
@@ -166,13 +166,13 @@ export default {
 
           @keyframes out {
             from {
-              background-image: linear-gradient(var(--orange), var(--orange));
+              background-image: linear-gradient(var(--hover), var(--hover));
               background-repeat: no-repeat;
               background-position: bottom left;
               background-size: 0.6rem 100%;
             }
             to {
-              background-image: linear-gradient(var(--orange),var(--orange));
+              background-image: linear-gradient(var(--hover),var(--hover));
               background-repeat: no-repeat;
               background-position: bottom left;
               background-size: 0.6rem 0%;
@@ -180,7 +180,7 @@ export default {
           }
 
           &:hover {
-            background-image: linear-gradient(var(--orange), var(--orange));
+            background-image: linear-gradient(var(--hover), var(--hover));
             background-position: bottom left;
             background-repeat: no-repeat;
             background-size: 0.6rem 100%;
