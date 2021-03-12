@@ -21,10 +21,9 @@
 
 <script>
 export default {
-  data: () => ({
-    name: 'HeaderNav'
-  }),
+  name: 'HeaderNav',
   mounted () {
+    // TODO: essayer avec un @click v-show
     const burger = document.querySelectorAll('#burger')
     const nav = document.querySelector('#nav-menu')
 
@@ -143,15 +142,18 @@ export default {
     }
 
     .nav-list {
+
       .nav-item {
         margin-top: 2rem;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
 
         .nav-link {
-          text-decoration: none;
-          color: inherit;
           padding-bottom: 0.2rem;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 1.5rem;
+          color: inherit;
           animation: out .2s ease;
 
           @keyframes out {

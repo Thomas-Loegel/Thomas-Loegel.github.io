@@ -1,6 +1,10 @@
 <template>
   <div class="about">
-    <h2 class="h2">{{ pageTitle }}</h2>
+    <h1 class="h1">{{ pageTitle }}</h1>
+
+    <div class="content">
+
+    </div>
   </div>
 </template>
 
@@ -19,8 +23,6 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.about {
+<style lang="scss" scoped>
 
-}
 </style>

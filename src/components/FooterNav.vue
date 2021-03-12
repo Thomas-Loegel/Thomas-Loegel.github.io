@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <span class="copy">© Loegel {{new Date().getFullYear()}}.</span>
+    <span class="copy">© Loegel {{ new Date().getFullYear() }}.</span>
 
     <div class="social">
       <a class="social-link" href="https://github.com/Thomas-Loegel" target="_blank" rel="noopener noreferrer">
@@ -19,11 +19,8 @@
 </template>
 
 <script>
-
 export default {
-  data: () => ({
-    name: 'FooterNav'
-  })
+  name: 'FooterNav'
 }
 </script>
 

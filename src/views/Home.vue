@@ -1,8 +1,9 @@
 <template>
   <div class="home">
-    <h2 class="h2">{{ pageTitle }}</h2>
+    <h1 class="h1">{{ pageTitle }}</h1>
 
-    <CardProject
+    <div class="content">
+      <CardProject
       className="hey"
       title="Hello Hello"
       content="ceci est mon content"
@@ -45,6 +46,7 @@
       content="Contenu de card project"
       img="logo.png" alt="Mon logo"
     />
+    </div>
   </div>
 </template>
 
@@ -66,8 +68,6 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.home {
+<style lang="scss" scoped>
 
-}
 </style>
