@@ -12,42 +12,70 @@
         className="hey"
         title="Hello Hello"
         content="ceci est mon content"
-        img="logo.png" alt="Mon logo"
+        img="css3.svg" alt="Mon logo"
       />
 
       <CardProject
         className="ho"
         title="Bye Bye"
         content="Contenu de card project"
-        img="logo.png" alt="Mon logo"
+        img="docker.svg" alt="Mon logo"
       />
 
       <CardProject
         className="ho"
         title="Bye Bye"
         content="Contenu de card project"
-        img="logo.png" alt="Mon logo"
+        img="git.svg" alt="Mon logo"
       />
 
       <CardProject
         className="ho"
         title="Bye Bye"
         content="Contenu de card project"
-        img="logo.png" alt="Mon logo"
+        img="html5.svg" alt="Mon logo"
       />
 
       <CardProject
         className="ho"
         title="Bye Bye"
         content="Contenu de card project"
-        img="logo.png" alt="Mon logo"
+        img="js.svg" alt="Mon logo"
       />
 
       <CardProject
         className="ho"
         title="Bye Bye"
         content="Contenu de card project"
-        img="logo.png" alt="Mon logo"
+        img="php.svg" alt="Mon logo"
+      />
+
+      <CardProject
+        className="ho"
+        title="Bye Bye"
+        content="Contenu de card project"
+        img="sass.svg" alt="Mon logo"
+      />
+
+      <CardProject
+        className="ho"
+        title="Bye Bye"
+        content="Contenu de card project"
+        img="symfony.svg" alt="Mon logo"
+      />
+
+      <CardProject
+        className="ho"
+        title="Bye Bye"
+        content="Contenu de card project"
+        img="vuejs.svg" alt="Mon logo"
+      />
+
+      <CardProject
+        className="ho"
+        title="Bye Bye"
+        content="Contenu de card project"
+        img="wordpress.svg" alt="Mon logo"
       />
     </div><!-- .content -->
   </div><!-- .home -->

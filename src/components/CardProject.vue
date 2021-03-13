@@ -2,7 +2,7 @@
   <article :class="className">
     <h3>{{ title }}</h3>
     <p>{{ content }}</p>
-    <img :src="require(`../../public/medias/projects/${img}`)" :alt="alt">
+    <img :src="require(`../../public/medias/stack/${img}`)" :alt="alt">
   </article>
 </template>
 
